@@ -4,7 +4,7 @@ export default function Home() {
       <h1 className="text-4xl font-bold text-red-600">
         {" "}
         {/* Sử dụng màu đỏ */}
-        Welcome to Next.js + Tailwind
+        Welcome to Next.js + Tailwind TEST
       </h1>
       <p className="mt-2 text-gray-700">Tailwind is successfully set up! 🎉</p>
     </div>
