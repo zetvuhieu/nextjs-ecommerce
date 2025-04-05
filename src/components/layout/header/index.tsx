@@ -1,10 +1,20 @@
-export default function Home() {
+import React from "react";
+import Logo from "./components/logo";
+import SearchComponent from "./components/searchBar";
+import UserComponent from "./components/userActions";
+
+const App = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-red-600">
-        Welcome to Next.js + Tailwind
-      </h1>
-      <p className="mt-2 text-gray-700">Tailwind is successfully set up! 🎉</p>
+    <div className="bg-gray-100 flex items-center justify-center">
+      <div className="bg-white p-2 rounded-lg shadow-lg w-full">
+        <div className="flex w-full">
+          <Logo />
+          <SearchComponent />
+          <UserComponent name="John Doe" email="johndoe@example.com" />
+        </div>
+      </div>
     </div>
   );
-}
+};
+
+export default App;
